@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:text="chat"
+            tools:ignore="InvalidId" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="call"
+
+            tools:ignore="InvalidId" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:text="status"
+
+            tools:ignore="DuplicateIds,InvalidId" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.gragments.fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>
